@@ -1,0 +1,9 @@
+version: '3'
+services:
+  scraper:
+    build: .
+    volumes:
+      - ./output:/app/output
+    environment:
+      - SCRAPER_LANGUAGE=en
+      - BASE_URL=https://google.com
